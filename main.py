@@ -33,7 +33,7 @@ async def status(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text("Formato inválido. Usa assim: /status 3-1")
 
 if __name__ == '__main__':
-    app = ApplicationBuilder().token("TOKENFATHERBOT AQUI").build()
+    app = ApplicationBuilder().token("TELEGRAM_TOKEN").build()
 
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("status", status))
